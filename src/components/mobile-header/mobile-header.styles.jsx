@@ -127,7 +127,7 @@ export const MobileHeaderContainer = styled.div`
     height: 36px;
   }
 
-  .side-nav{
+  .side-nav {
     position: absolute;
     left: 0;
     top: 0;

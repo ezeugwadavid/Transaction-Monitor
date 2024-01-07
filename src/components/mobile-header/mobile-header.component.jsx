@@ -12,13 +12,17 @@ const MobileHeader = () => {
   const [showSideNav, setShowSideNav] = useState(false);
 
   const closeSideNav = () => {
-    setShowSideNav(!showSideNav)
+    setShowSideNav(!showSideNav);
   };
   return (
     <MobileHeaderContainer>
       <div className="top-nav">
         <div className="hambuger">
-          <img src={HambugerIcon} alt="" onClick={() => setShowSideNav(!showSideNav)} />
+          <img
+            src={HambugerIcon}
+            alt=""
+            onClick={() => setShowSideNav(!showSideNav)}
+          />
         </div>
         <div className="header-logo">TransMonitor</div>
         <div className="arr-menu" onClick={() => setShowTopNav(!showTopNav)}>
@@ -59,15 +63,14 @@ const MobileHeader = () => {
         ) : (
           ""
         )}
-        
-        { showSideNav ?
+
+        {showSideNav ? (
           <div className="side-nav">
-          <SideNav closeSideNav={closeSideNav} close={true}/>
-         </div>
-         :
-         ''
-        }
-       
+            <SideNav closeSideNav={closeSideNav} close={true} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </MobileHeaderContainer>
   );

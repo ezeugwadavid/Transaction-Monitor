@@ -1,17 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 export const GraphDescContainer = styled.div`
+  .order-section {
+    border-radius: 2px;
+    border: 1px solid #eef8fd;
+    background: #fff;
+    padding: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
 
-
-.order-section{
-border-radius: 2px;
-border: 1px solid #EEF8FD;
-background: #FFF;
-padding: 20px;
-margin-left: 5px;
-margin-top: 20px;
-}
-
-.ordertitle{
+  .ordertitle {
     display: flex;
     justify-content: start;
     margin-bottom: 10px;
@@ -20,82 +18,80 @@ margin-top: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-}
+  }
 
-.linear-progress{
+  .linear-progress {
     margin-bottom: 10px;
     width: 80%;
     display: flex;
     justify-content: start;
-}
+  }
 
-.pending-orders{
+  .pending-orders {
     display: flex;
     justify-content: start;
     margin-bottom: 10px;
     color: #262626;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-}
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-.yellow{
-    color: #EBC315;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; 
-margin-left: 5px;
-}
-
-.recon-orders{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-    color: #262626;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;   
-}
-
-.green{
-color: #27AE60;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-margin-left: 5px;
-}
-
-.total-orders{
-    display: flex;
-    justify-content: start;
-    color: #262626;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-}
-
-.blue{
+  .yellow {
+    color: #ebc315;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     margin-left: 5px;
-    color: #1860EC;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
+  }
 
-.payments-section{
-border-radius: 2px;
-border: 1px solid #EEF8FD;
-background: #FFF;
-padding: 20px;
-margin-left: 5px;
-margin-top: 5px; 
-}
+  .recon-orders {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    color: #262626;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
+  .green {
+    color: #27ae60;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 5px;
+  }
 
+  .total-orders {
+    display: flex;
+    justify-content: start;
+    color: #262626;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .blue {
+    margin-left: 5px;
+    color: #1860ec;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .payments-section {
+    border-radius: 2px;
+    border: 1px solid #eef8fd;
+    background: #fff;
+    padding: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 `;

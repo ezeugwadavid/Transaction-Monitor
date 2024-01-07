@@ -6,6 +6,7 @@ export const TransactionCardContainer = styled.div`
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
   margin-left: 10px;
 
   .trans-text {
@@ -31,6 +32,6 @@ export const TransactionCardContainer = styled.div`
   }
 
   @media screen and (min-width: 768px) and (max-width: 992px) {
-   width: 80%;
-  };
+    width: 80%;
+  }
 `;

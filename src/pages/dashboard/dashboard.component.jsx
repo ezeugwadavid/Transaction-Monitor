@@ -8,19 +8,18 @@ const Dashboard = () => {
   return (
     <DashboardContainer>
       <div className="header-nav">
-      <Header />
-      </div>
-      
-    <div className="body">
-      <div className="left">
-        <SideNav />
+        <Header />
       </div>
 
-      <div className="right">
-        <DashboardMain />
-      </div>
+      <div className="body">
+        <div className="left">
+          <SideNav />
+        </div>
 
-    </div>
+        <div className="right">
+          <DashboardMain />
+        </div>
+      </div>
     </DashboardContainer>
   );
 };

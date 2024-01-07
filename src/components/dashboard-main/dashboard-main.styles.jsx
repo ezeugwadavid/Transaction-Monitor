@@ -24,8 +24,8 @@ export const DashboardMainContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     .main-content {
-    width: 100%;
-    padding-right: 2%;
+      width: 100%;
+      padding-right: 2%;
+    }
   }
-  };
 `;

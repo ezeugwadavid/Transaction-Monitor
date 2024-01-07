@@ -91,7 +91,6 @@ export const TableContainer = styled.div`
 
   .sort {
     position: relative;
-    /* right: 11%; */
     width: 15%;
     z-index: 1;
   }
@@ -278,5 +277,91 @@ export const TableContainer = styled.div`
     font-weight: 400;
     line-height: normal;
     padding: 5px 10px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .nav-left {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      width: 90%;
+    }
+
+    .t1 {
+      text-align: left;
+      margin-right: 0px;
+    }
+
+    .t2 {
+      text-align: left;
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    .t3 {
+      text-align: left;
+      margin-right: 0%;
+      margin-bottom: 10px;
+    }
+
+    .nav-end {
+      width: 100%;
+    }
+
+    .sort {
+      width: 50%;
+    }
+
+    .sort-by {
+      width: 100%;
+    }
+
+    .type-circle {
+      padding: auto;
+      font-size: 10px;
+      height: 35px;
+    }
+
+    .spec {
+      font-size: 12px;
+    }
+
+    .state {
+      border-radius: 20px;
+      padding: 5px 5px;
+    }
+
+    .state-txt-yellow {
+      font-size: 10px;
+    }
+    .state-txt-green {
+      font-size: 10px;
+    }
+
+    .state-txt-grey {
+      font-size: 10px;
+    }
+
+    .table-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .right-bottom {
+      margin-right: 10%;
+    }
+
+    .table-container {
+      margin-right: 10%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 806px) {
+    .type-circle {
+      padding: auto;
+      font-size: 10px;
+      height: 35px;
+    }
   }
 `;
