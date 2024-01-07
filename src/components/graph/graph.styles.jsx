@@ -53,5 +53,10 @@ line-height: normal;
     margin-right: 20px;
 }
 
+.area{
+    height: 245px !important;
+    padding-left: 10px;
+}
+
 
 `;

@@ -9,11 +9,19 @@ import ProfileIcon from "../../assets/profile-icon.svg";
 import ReconcilledOrdersIcon from "../../assets/reconcilled-orders-icon.svg";
 import ReconcilledPaymentsIcon from "../../assets/reconcilled-payments-icon.svg";
 import UnReconcilledPaymentsIcon from "../../assets/un-reconcilled-payments-icon.svg";
+import PropTypes from "prop-types";
 
-const SideNav = () => {
+const SideNav = ({ close, closeSideNav }) => {
   return (
     <SideNavContainer>
       <div className="sidenav-cover">
+        {close ? (
+          <div className="close" onClick={closeSideNav}>
+            <div className="close-text">X</div>
+          </div>
+        ) : (
+          ""
+        )}
         <div className="invoice">GENERATE INVOICE</div>
 
         <div className="main">
@@ -82,6 +90,11 @@ const SideNav = () => {
       </div>
     </SideNavContainer>
   );
+};
+
+SideNav.propTypes = {
+  close: PropTypes.bool,
+  closeSideNav: PropTypes.func
 };
 
 export default SideNav;
