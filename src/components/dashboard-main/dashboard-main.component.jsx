@@ -26,11 +26,11 @@ const DashboardMain = () => (
       </Row>
 
       <Row className="g-0">
-        <Col xs={12} sm={8}>
+        <Col xs={12} sm={8} md={12} lg={8}>
           <Graph />
         </Col>
 
-        <Col xs={12} sm={4}>
+        <Col xs={12} sm={4} md={12} lg={4}>
           <GraphDesc />
         </Col>
       </Row>

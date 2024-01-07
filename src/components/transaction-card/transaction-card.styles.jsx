@@ -29,4 +29,8 @@ export const TransactionCardContainer = styled.div`
     line-height: normal;
     text-align: left;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+   width: 80%;
+  };
 `;
