@@ -305,6 +305,22 @@ export const TableContainer = styled.div`
       margin-bottom: 15px;
     }
 
+    .circle-dot-yellow {
+      width: 7px;
+      height: 7px;
+    }
+    .circle-dot-green {
+      width: 7px;
+      height: 7px;
+    }
+    .circle-dot-grey {
+      width: 7px;
+      height: 7px;
+      background-color: #7f8fa4;
+      border-radius: 50px;
+      margin: auto 4px;
+    }
+
     .nav-center {
       display: flex;
     }
@@ -376,7 +392,7 @@ export const TableContainer = styled.div`
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 806px) {
+  @media screen and (min-width: 768px) and (max-width: 840px) {
     .type-circle {
       padding: auto;
       font-size: 10px;

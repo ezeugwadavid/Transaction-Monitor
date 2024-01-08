@@ -15,7 +15,9 @@ export const MobileHeaderContainer = styled.div`
   }
 
   .search-icon {
-    margin: auto 3px;
+    margin: auto 0px;
+    position: relative;
+    left: 30px;
   }
 
   input {
