@@ -57,6 +57,7 @@ const Graph = () => {
       };
     },
   };
+
   return (
     <GraphContainer>
       <div className="graph-header-section">

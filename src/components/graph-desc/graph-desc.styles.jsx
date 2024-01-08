@@ -4,7 +4,7 @@ export const GraphDescContainer = styled.div`
     border-radius: 2px;
     border: 1px solid #eef8fd;
     background: #fff;
-    padding: 20px;
+    padding: 19px;
     margin-left: 5px;
     margin-top: 20px;
   }
@@ -12,7 +12,7 @@ export const GraphDescContainer = styled.div`
   .ordertitle {
     display: flex;
     justify-content: start;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color: #262626;
     font-size: 15px;
     font-style: normal;
@@ -21,8 +21,8 @@ export const GraphDescContainer = styled.div`
   }
 
   .linear-progress {
-    margin-bottom: 10px;
     width: 80%;
+    height: 10px !important;
     display: flex;
     justify-content: start;
   }
@@ -30,6 +30,7 @@ export const GraphDescContainer = styled.div`
   .pending-orders {
     display: flex;
     justify-content: start;
+    margin-top: 15px;
     margin-bottom: 10px;
     color: #262626;
     font-size: 14px;
@@ -90,7 +91,7 @@ export const GraphDescContainer = styled.div`
     border-radius: 2px;
     border: 1px solid #eef8fd;
     background: #fff;
-    padding: 20px;
+    padding: 19px;
     margin-left: 5px;
     margin-top: 5px;
   }
