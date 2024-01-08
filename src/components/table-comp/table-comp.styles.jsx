@@ -361,6 +361,12 @@ export const TableContainer = styled.div`
       font-size: 12px;
     }
 
+    .price,
+    .trans,
+    .time {
+      margin-top: 0px;
+    }
+
     .state {
       border-radius: 20px;
       padding: 5px 5px;
