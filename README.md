@@ -27,12 +27,12 @@ git clone https://github.com/ezeugwadavid/Transaction-Monitor.git
 
 2. Cd into the root folder and Install dependencies
 ```
-npm install
+yarn install
 ```
 
 3. Start the server:
 ```
-npm start
+yarn start
 ```
 
 
