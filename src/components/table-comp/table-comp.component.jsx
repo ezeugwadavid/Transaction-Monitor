@@ -1,14 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TableContainer } from "./table-comp.styles";
 import ArrowDownBlue from "../../assets/arrow-down-blue.svg";
 import Search from "../../assets/search.svg";
 import ArrowDownLg from "../../assets/arr-down-lg.svg";
 import Table from "react-bootstrap/Table";
 import { tableData } from "../../utils/dummy";
+import ReactPaginate from "react-paginate";
 
 const TableComp = () => {
   const [showSort, setShowSort] = useState(false);
   const [dummyData, setDummyData] = useState(tableData);
+
+  const [itemOffset, setItemOffset] = useState(0);
+  const [currentItems, setCurrentItems] = useState([]);
+  const [pageCount, setPageCount] = useState(0);
+  const itemsPerPage = 6;
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % dummyData.length;
+    setItemOffset(newOffset);
+  };
 
   const getReconcilled = () => {
     setShowSort(!showSort);
@@ -30,6 +41,12 @@ const TableComp = () => {
     setDummyData(tableData);
   };
 
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage;
+    setCurrentItems(dummyData.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(dummyData.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, dummyData]);
+
   return (
     <TableContainer>
       <div className="table-title">Payments</div>
@@ -37,12 +54,12 @@ const TableComp = () => {
         <div className="nav-left">
           <div className="t1">Showing</div>
           <div className="t2">
-            20{" "}
+            {dummyData.length}{" "}
             <span className="arr-down">
               <img src={ArrowDownBlue} alt="" />{" "}
             </span>
           </div>
-          <div className="t3">out of 500 payments</div>
+          <div className="t3">out of {dummyData.length} payments</div>
 
           <div className="nav-center">
             <img className="search-svg" src={Search} alt="" />
@@ -107,7 +124,7 @@ const TableComp = () => {
             </tr>
           </thead>
           <tbody>
-            {dummyData.map((data) => {
+            {currentItems?.map((data) => {
               return (
                 <tr key={data.id}>
                   <td className="type">
@@ -163,13 +180,24 @@ const TableComp = () => {
       </div>
 
       <div className="table-bottom">
-        <div className="left-bottom">Showing 1 to 10 of 500 entries</div>
-        <div className="right-bottom">
-          <div className="prev">Previous</div>
-          <div className="highlight">1</div>
-          <div className="num">2</div>
-          <div className="prev">Next</div>
+        <div className="left-bottom">
+          Showing 1 to {itemsPerPage} of {dummyData.length} entries
         </div>
+
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="Next"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={3}
+          pageCount={pageCount}
+          previousLabel="Previous"
+          renderOnZeroPageCount={null}
+          containerClassName="right-bottom"
+          pageLinkClassName="num"
+          previousLinkClassName="prev"
+          nextLinkClassName="prev"
+          activeLinkClassName="highlight"
+        />
       </div>
     </TableContainer>
   );

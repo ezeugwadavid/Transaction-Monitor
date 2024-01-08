@@ -246,7 +246,7 @@ export const TableContainer = styled.div`
 
   .right-bottom {
     display: flex;
-    cursor: pointer;
+    list-style: none;
   }
 
   .prev {
@@ -257,11 +257,12 @@ export const TableContainer = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none !important;
   }
 
   .highlight {
     background: #1875f0;
-    color: #fff;
+    color: #fff !important;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -295,14 +296,32 @@ export const TableContainer = styled.div`
     .t2 {
       text-align: left;
       margin-right: 0px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .t3 {
       text-align: left;
       margin-right: 0%;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
+
+    .nav-center {
+    display: flex;
+  }
+
+  .table-search {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .table-search:focus {
+    outline: none;
+  }
+
+  .search-svg {
+    position: relative;
+    left: 5px;
+  }
 
     .nav-end {
       width: 100%;

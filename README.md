@@ -15,6 +15,7 @@ Below are the features of transmonitor at this point
 - Users can get a summary of their transactions<br>
 - Users can sort payments via its state<br>
 - Users get graphical representation of their monthly transactions<br>
+- Paginated table for ease of use<br>
 
 
 ## Installation
