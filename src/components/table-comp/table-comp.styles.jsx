@@ -306,22 +306,22 @@ export const TableContainer = styled.div`
     }
 
     .nav-center {
-    display: flex;
-  }
+      display: flex;
+    }
 
-  .table-search {
-    padding-left: 15px;
-    padding-right: 0px;
-  }
+    .table-search {
+      padding-left: 15px;
+      padding-right: 0px;
+    }
 
-  .table-search:focus {
-    outline: none;
-  }
+    .table-search:focus {
+      outline: none;
+    }
 
-  .search-svg {
-    position: relative;
-    left: 5px;
-  }
+    .search-svg {
+      position: relative;
+      left: 5px;
+    }
 
     .nav-end {
       width: 100%;
