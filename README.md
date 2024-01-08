@@ -2,7 +2,7 @@
 
 
 ## Site is live at:
-https://trans-monitor.netlify.app/
+https://transaction-monitor.netlify.app/
 
 
 ## Description
